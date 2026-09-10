@@ -43,7 +43,7 @@
 
 ### Код для проверки:
 
-'''cpp
+```cpp
 
 #include <bitset>
 int main(){
@@ -53,7 +53,7 @@ int main(){
     std::cout << "Двоичное: " << std::bitset<16>(x) << std::endl;
     std::cout << "Шестнадцатеричное: " << std::hex << x << std::endl;
 }
-'''
+```
 
 
 ## Задача 2
@@ -63,17 +63,17 @@ int main(){
 -25			  0001 1001			  1110 0110			1110 0111
 -100		  0110 0100			  1001 1011			1001 1100
 
-'''cpp
+```cpp
 #include <iostream>
 #include <bitset>
 int main() {
     char x = -25;
     std::cout << std::bitset<8>(x) << std::endl;
 }
-'''
+```
 
 ## Задача 3
-'''cpp
+```cpp
 #include <iostream>
 #include <bitset>
 using namespace std;
@@ -92,7 +92,7 @@ int main() {
 
     return 0;
 }
-'''
+```
 
 ### Объяснение: 
 Тип данных int имеет длину ровно 32 бита, 1 бит занят знаком числа +(0) или -(1)  максимальное возможное положительное число 2 147 483 647 которое можно втиснуть в 32 бита 
@@ -100,7 +100,7 @@ int main() {
 (10000000000000000000000000000000)
 
 ## Задача 4
-'''cpp
+```cpp
 #include <iostream>
 #include <iomanip> 
 using namespace std;
@@ -117,11 +117,11 @@ int main() {
 
     return 0;
 }
-'''
+```
 
 
 ## Задача 5
-'''cpp
+```cpp
 #include <iostream>
 #include <bitset>
 #include <cstring>
@@ -136,7 +136,7 @@ int main() {
     std::cout << "Порядок: " << std::bitset<8>(bits >> 23) << std::endl;
     std::cout << "Мантисса: " << std::bitset<23>(bits) << std::endl;
 }
-'''
+```
 
 ### Ответ:
 Мантиссы не являются красивыми тк не заканчиваются на нули. Компьютер хранит эти числа с микроскопической погрешностью (он их обрезает и округляет).
